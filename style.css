@@ -1,0 +1,41 @@
+header { 
+	font-size: 4em;
+	margin: 20px;
+}
+
+p { 
+	font-size: 1.5em;
+	text-align: center;
+}
+
+body {
+	background-color: black;
+}
+
+.container-fluid {
+
+}
+
+.img-responsive {
+	width: 100%;
+}
+
+.font{
+	font-family: courier, helvetica, sans-serif;
+	color:  silver;
+}
+
+.thumbnail {
+  border: 0;
+  background: transparent;
+  font-size: 0.8em;
+  font-family: courier, helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
