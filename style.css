@@ -5,8 +5,7 @@ header {
 
 p { 
 	font-size: 1.5em;
-	text-align: center;
-}
+	}
 
 body {
 	background-color: black;
@@ -32,6 +31,10 @@ body {
   font-family: courier, helvetica, sans-serif;
 }
 
+div.j {
+	text-align: justify;
+	text-justify: inter-word;
+}
 
 
 
