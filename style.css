@@ -36,6 +36,10 @@ div.j {
 	text-justify: inter-word;
 }
 
+html {  
+      scroll-behavior: smooth;  
+}
+
 
 
 
