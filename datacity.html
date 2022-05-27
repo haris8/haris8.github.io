@@ -93,7 +93,7 @@
                   <nav aria-label="Use case navigation">
                     <ul class="pagination">
                       <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                      <li class="page-item"><a class="page-link" href="use cases/job entity use cases.html">1</a></li>
+                      <li class="page-item"><a class="page-link" id="job">1</a></li>
                       <li class="page-item"><a class="page-link" href="#">2</a></li>
                       <li class="page-item"><a class="page-link" href="#">3</a></li>
                       <li class="page-item"><a class="page-link" href="#">Next</a></li>
@@ -114,12 +114,12 @@
 
 
     <script>
-    const useCasesLink = document.querySelector('a.page-link href');
+    const useCasesSelection = document.querySelectorAll('a.page-link');
 
-    useCasesLink.addEventListener('click', displayUseCase);
+    useCasesSelection.addEventListener('click', displayUseCase);
 
     function displayUseCase() {
-      const useCaseType = useCasesLink;
+      const useCaseType = useCasesSelection;
       console.log(useCaseType);
     </script>
 
