@@ -89,16 +89,20 @@
                 <h5 class="modal-title" id="staticBackdropLabel">Use Cases</h5>
               </div>
               <div class="modal-body">
-                
+                  
+                  
+                  
+                  <!-- 
                   <nav aria-label="Use case navigation">
                     <ul class="pagination">
                       <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                      <li class="page-item"><a class="page-link" id="job">1</a></li>
+                      <li class="page-item"><a class="page-link" id="job">Job Entity</a></li>
                       <li class="page-item"><a class="page-link" href="#">2</a></li>
                       <li class="page-item"><a class="page-link" href="#">3</a></li>
                       <li class="page-item"><a class="page-link" href="#">Next</a></li>
                     </ul>
                   </nav>
+                  -->
 
 
                 
@@ -112,15 +116,16 @@
         </div>
       </div>  
 
+      <button type="button" class="btn btn-warning" id ="job">Job Entity</button>
 
     <script>
-    const useCasesSelection = document.querySelectorAll('a.page-link');
+    const useCasesSelection = document.querySelectorAll('#job');
 
     useCasesSelection.addEventListener('click', displayUseCase);
 
     function displayUseCase() {
       const useCaseType = useCasesSelection;
-      console.log(useCaseType);
+      window.alert("test");
     </script>
 
   </div>
