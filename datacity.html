@@ -41,6 +41,7 @@
     <p class="font" style="margin: 2em 100px;"> This product displays how this can be accomplished with certain parties, such as Human Resources and Hiring Managers, having access to particular features of the product while at the same time providing job seekers an advantage by having the ability to view other candidates’ experiences.</p>
     
 
+    <div>
     <!-- ER Button trigger modal -->
     <button type="button" class="btn btn-dark" style="margin-right: 5px" data-bs-toggle="modal" data-bs-target="#er">
       ER Diagram
@@ -89,92 +90,86 @@
         </div>
       </div>
 
-    <!-- Use Cases Button trigger modal -->
-    <button type="button" class="btn btn-dark" style="margin-right: 5px" data-bs-toggle="modal" data-bs-target="#cases">
-      Use Cases
-    </button>
 
-        <!-- Use Cases Modal -->
-        <div class="modal fade" id="cases" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Use Cases</h5>
+              <!-- Use Cases Dropdown Modal -->
+              <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" style="margin-top: 10px" data-bs-toggle="dropdown" aria-expanded="false">
+                  Use Cases
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#job-modal" data-bs-toggle="modal">Job Entity</a></li>
+                  <li><a class="dropdown-item" href="#resume-modal">Resume Entity</a></li>
+                  <li><a class="dropdown-item" href="#candidate-modal">Candidate Entity</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
               </div>
-              <div class="modal-body">
-                  <!--
-                  <button type="button" class="btn btn-warning" id ="job" onclick="getClickID(this.id)">Job Entity</button>
-                  -->
-              </div>
-            
-              <div class="modal-footer">
-                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>  
 
-                  <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                      Use Cases
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                      <li><a class="dropdown-item active" href="#job-modal" data-bs-toggle="modal">Job Entity</a></li>
-                      <li><a class="dropdown-item" href="#resume-modal">Resume Entity</a></li>
-                      <li><a class="dropdown-item" href="#candidate-modal">Candidate Entity</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-
-                  <!-- Job Entity Use Case Modal -->
-                  <div class="modal fade" id="job-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="staticBackdropLabel">Job Entity</h5>
-                        </div>
-                        <div class="modal-body">
-                          <div class="row">
-                            <div class="col-4">
-                              <div class="list-group" id="list-tab" role="tablist">
-                                <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Post New Job</a>
-                                <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
-                                <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
-                                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
-                              </div>
-                            </div>
-                            <div class="col-8">
-                              <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                                  
-                                  <h4>Actor: Human Resources</h4>
-                                  <h5>Steps</h5>
-                                  <div>
-                                    <ol>
-                                      <li>User clicks on the "Post New Job" button.</li>
-                                      <li>New Job page is displayed with fields to be filled.</li>
-
-                                    </ol>
-                                  </div>
-
-                                </div>
-                                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-                                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-                                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
-                              </div>
-                            </div>
+              <!-- Job Entity Use Case Modal -->
+              <div class="modal fade" id="job-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Job Entity</h5>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-postnewjob-list" data-bs-toggle="list" href="#list-postnewjob" role="tab" aria-controls="list-postnewjob">Post New Job</a>
+                            <a class="list-group-item list-group-item-action" id="list-deletejob-list" data-bs-toggle="list" href="#list-deletejob" role="tab" aria-controls="list-deletejob">Delete Job</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Update Job Salary</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Find minimum and maximum salary from the posted jobs</a>
                           </div>
-
                         </div>
-                      
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        <div class="col-8">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-postnewjob" role="tabpanel" aria-labelledby="list-postnewjob-list">
+                              
+                              <h4>Actor: Human Resources</h4>
+                              <h5>Steps</h5>
+                              <div>
+                                <ol>
+                                  <li>User clicks on the "Post New Job" button.</li>
+                                  <li>New Job page is displayed with fields to be filled.</li>
+
+                                </ol>
+                              </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="list-deletejob" role="tabpanel" aria-labelledby="list-deletejob-list">
+                              <h4>Actor: Human Resources</h4>
+                              <h5>Steps</h5>
+                              <div>
+                                <ol>
+                                  <li>User clicks on the "Remove Job Posting" button.</li>
+                                  <li>Data on the job is displayed to the user. User removes jobs for which resumes have not been received.</li>
+                                  <li>
+                                    Users will be asked to confirm the removal.
+                                  </li>
+                                  <li>
+                                    When confirmed the data related to it will be removed.
+                                  </li>
+
+                                </ol>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
                       
                       </div>
                     </div>
                   </div>
                 </div>
+            </div>
 
   </div>
 
