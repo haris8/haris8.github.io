@@ -10,13 +10,17 @@ body {
   font-family: courier, helvetica, sans-serif;
 }
 div.top {
-	padding-bottom: 100px;
+	padding-bottom: 0px;
 	text-align: center;
 	word-wrap: break-word;
 }
+
+div.gap {
+	
+}
 div.middle {
-	padding-top: 100px;
-	padding-bottom: 50px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	text-align: center;
 }
 
