@@ -94,10 +94,10 @@
               <!-- Use Cases Dropdown Modal -->
               <div class="dropdown">
                 <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" style="margin-top: 10px" data-bs-toggle="dropdown" aria-expanded="false">
-                  Use Cases
+                  Use Cases & SQL Statements
                 </button>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#job-modal" data-bs-toggle="modal">Job Entity</a></li>
+                  <li><a class="dropdown-item" href="#job-modal" data-bs-toggle="modal">Job Entity</a></li>
                   <li><a class="dropdown-item" href="#resume-modal">Resume Entity</a></li>
                   <li><a class="dropdown-item" href="#candidate-modal">Candidate Entity</a></li>
                   <li><hr class="dropdown-divider"></li>
@@ -118,7 +118,7 @@
                           <div class="list-group" id="list-tab" role="tablist">
                             <a class="list-group-item list-group-item-action active" id="list-postnewjob-list" data-bs-toggle="list" href="#list-postnewjob" role="tab" aria-controls="list-postnewjob">Post New Job</a>
                             <a class="list-group-item list-group-item-action" id="list-deletejob-list" data-bs-toggle="list" href="#list-deletejob" role="tab" aria-controls="list-deletejob">Delete Job</a>
-                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Update Job Salary</a>
+                            <a class="list-group-item list-group-item-action" id="list-updatejob-list" data-bs-toggle="list" href="#list-updatejob" role="tab" aria-controls="list-updatejob">Update Job Salary</a>
                             <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Find minimum and maximum salary from the posted jobs</a>
                           </div>
                         </div>
@@ -132,8 +132,8 @@
                                 <ol>
                                   <li>User clicks on the "Post New Job" button.</li>
                                   <li>New Job page is displayed with fields to be filled.</li>
-
                                 </ol>
+                                <a href="sql.html#job-insert" target="_blank">Insert SQL Statement</a>
                               </div>
 
                             </div>
@@ -150,11 +150,29 @@
                                   <li>
                                     When confirmed the data related to it will be removed.
                                   </li>
-
                                 </ol>
+                                <a href="sql.html#job-delete" target="_blank">Delete SQL Statement</a>
                               </div>
                             </div>
-                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                            <div class="tab-pane fade" id="list-updatejob" role="tabpanel" aria-labelledby="list-updatejob-list">
+                              <h4>Actor: Human Resources</h4>
+                              <h5>Steps</h5>
+                              <div>
+                                <ol>
+                                  <li>User clicks on the "Edit Job" button.</li>
+                                  <li>Job Posting data is displayed.</li>
+                                  <li>
+                                    Users will be able to change the Job Salary.
+                                  </li>
+                                  <li>
+                                    Users will be asked to confirm after changing the data.
+                                  </li>
+                                  <li>New changes to data will be displayed to the user.
+                                  </li>
+                                </ol>
+                                <a href="sql.html#job-update" target="_blank">Update SQL Statement</a>
+                              </div>
+                            </div>
                             <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
                           </div>
                         </div>
@@ -170,6 +188,10 @@
                   </div>
                 </div>
             </div>
+
+            <div class="gap">
+        <img class="rounded img-fluid" src="images/index_gap1.png" alt="border" style="margin-top: 50px;">
+      </div>
 
   </div>
 

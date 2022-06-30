@@ -1,5 +1,6 @@
 body {
 	background-color: black;
+	word-wrap: break-word;
 }
 
 .font{

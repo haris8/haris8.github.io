@@ -17,7 +17,7 @@
 
   <body>
 
-    <p class="font">Insert SQL statement for Job Entity</p>
+    <p id="job-insert" class="font">Insert SQL statement for Job Entity</p>
 
     <pre>
       <code class="font">
@@ -61,6 +61,26 @@
         , 'Database Developer'
         , 1
         , 1);
+      </code>
+    </pre>
+
+
+    <p id="job-delete" class="font">Delete SQL statement for Job Entity</p>
+
+    <pre>
+      <code class="font">
+        DELETE FROM Job
+        WHERE recResume = 0;
+      </code>
+    </pre>
+
+    <p id="job-update" class="font">Update SQL statement for Job Entity</p>
+
+    <pre>
+      <code class="font">
+        UPDATE Job
+        SET salary = salary*1.2
+        WHERE companyID = 1, salary < 40000;
       </code>
     </pre>
 
