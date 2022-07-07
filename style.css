@@ -1,6 +1,5 @@
 body {
 	background-color: black;
-	word-wrap: break-word;
 }
 
 .font{
@@ -16,13 +15,17 @@ div.top {
 	word-wrap: break-word;
 }
 
-div.gap {
-	
-}
+
 div.middle {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	text-align: center;
+}
+
+div.seattle {
+	margin-bottom: 50px;
+
+
 }
 
 html {  
