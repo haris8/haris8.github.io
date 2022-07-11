@@ -33,7 +33,7 @@
 
   <body>
 
-    <div class="top"><img style="margin-bottom: 50px" id="hs" class="rounded d-block img-fluid mx-auto" src="images/datacity.jpg" style="max-width: 90%" alt="Downtown Houston from UHD">
+    <div class="top"><img style="margin-bottom: 50px" id="datacity" class="rounded d-block img-fluid mx-auto" src="images/datacity.jpg" style="max-width: 90%" alt="Downtown Houston from UHD">
     
    
     <p class="font" style="margin: 2em 100px;"> <b>DataCity</b> models a typical job posting platform with the added benefit of candidates leaving precise reviews to add objectivity and transparency to the interview process for software and data engineering roles.</p>
@@ -117,7 +117,7 @@
                             <a class="list-group-item list-group-item-action active" id="list-postnewjob-list" data-bs-toggle="list" href="#list-postnewjob" role="tab" aria-controls="list-postnewjob">Post New Job</a>
                             <a class="list-group-item list-group-item-action" id="list-deletejob-list" data-bs-toggle="list" href="#list-deletejob" role="tab" aria-controls="list-deletejob">Delete Job</a>
                             <a class="list-group-item list-group-item-action" id="list-updatejob-list" data-bs-toggle="list" href="#list-updatejob" role="tab" aria-controls="list-updatejob">Update Job Salary</a>
-                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Find minimum and maximum salary from the posted jobs</a>
+                            <a class="list-group-item list-group-item-action" id="list-findminmax-list" data-bs-toggle="list" href="#list-findminmax" role="tab" aria-controls="list-findminmax">Find minimum and maximum salary from the posted jobs</a>
                           </div>
                         </div>
                         <div class="col-8">
@@ -171,7 +171,25 @@
                                 <a href="sql.html#job-update" target="_blank">Update SQL Statement</a>
                               </div>
                             </div>
-                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+
+                            <div class="tab-pane fade" id="list-findminmax" role="tabpanel" aria-labelledby="list-findminmax-list">
+                              <h4>Actor: Job seeker</h4>
+                              <h5>Steps</h5>
+                              <div>
+                                <ol>
+                                  <li>User accesses database</li>
+                                  <li>Job Postings data are displayed.</li>
+                                  <li>
+                                    User filters jobs according to salary specifying minimum and maximum as filters.
+                                  </li>
+                                  <li>
+                                    The 2 specific jobs with min and max salary are displayed.
+                                  </li>
+                                </ol>
+                                <a href="sql.html#job-aggregate" target="_blank">Aggregate SQL Statement</a>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="list-findminmax" role="tabpanel" aria-labelledby="list-findminmax-list">...</div>
                           </div>
                         </div>
                       </div>
