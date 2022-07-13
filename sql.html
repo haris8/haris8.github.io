@@ -17,7 +17,7 @@
 
   <body>
 
-    <p id="job-insert" class="font">Insert SQL statement for Job Entity</p>
+    <p id="job-insert" class="font">Insert Statement for Job Table</p>
 
     <pre>
       <code class="font">
@@ -65,7 +65,7 @@
     </pre>
 
 
-    <p id="job-delete" class="font">Delete SQL statement for Job Entity</p>
+    <p id="job-delete" class="font">Delete Statement for Job Table</p>
 
     <pre>
       <code class="font">
@@ -74,7 +74,7 @@
       </code>
     </pre>
 
-    <p id="job-update" class="font">Update SQL statement for Job Entity</p>
+    <p id="job-update" class="font">Update Statement for Job Table</p>
 
     <pre>
       <code class="font">
@@ -84,12 +84,22 @@
       </code>
     </pre>
 
-    <p id="job-aggregate" class="font">Aggregate SQL statement for Job Entity</p>
+    <p id="job-aggregate" class="font">Aggregate Statement for Job Table</p>
 
     <pre>
       <code class="font">
         SELECT MIN(salary) AS 'minSalary',  MAX(salary) AS 'maxSalary'
         FROM Job;
+      </code>
+    </pre>
+
+    <p id="job-join" class="font">Join Query Between Resume and Candidate Table</p>
+
+    <pre>
+      <code class="font">
+        SELECT salary, candidateNo
+        FROM Job j JOIN Resume r ON j.jobNo = r.jobNo
+        WHERE recResume = 1;
       </code>
     </pre>
 

@@ -114,15 +114,17 @@
                       <div class="row">
                         <div class="col-4">
                           <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-postnewjob-list" data-bs-toggle="list" href="#list-postnewjob" role="tab" aria-controls="list-postnewjob">Post New Job</a>
+                            <a class="list-group-item list-group-item-action active" id="list-insertjob-list" data-bs-toggle="list" href="#list-insertjob" role="tab" aria-controls="list-insertjob">Post New Job</a>
                             <a class="list-group-item list-group-item-action" id="list-deletejob-list" data-bs-toggle="list" href="#list-deletejob" role="tab" aria-controls="list-deletejob">Delete Job</a>
                             <a class="list-group-item list-group-item-action" id="list-updatejob-list" data-bs-toggle="list" href="#list-updatejob" role="tab" aria-controls="list-updatejob">Update Job Salary</a>
-                            <a class="list-group-item list-group-item-action" id="list-findminmax-list" data-bs-toggle="list" href="#list-findminmax" role="tab" aria-controls="list-findminmax">Find minimum and maximum salary from the posted jobs</a>
+                            <a class="list-group-item list-group-item-action" id="list-aggregatejob-list" data-bs-toggle="list" href="#list-aggregatejob" role="tab" aria-controls="list-aggregatejob">Find minimum and maximum salary from the posted jobs</a>
+                            <a class="list-group-item list-group-item-action" id="list-joinjob-list" data-bs-toggle="list" href="#list-joinjob" role="tab" aria-controls="list-joinjob">Find jobs for which resumes have been received.</a>
                           </div>
                         </div>
+
                         <div class="col-8">
                           <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="list-postnewjob" role="tabpanel" aria-labelledby="list-postnewjob-list">
+                            <div class="tab-pane fade show active" id="list-insertjob" role="tabpanel" aria-labelledby="list-insertjob-list">
                               
                               <h4>Actor: Human Resources</h4>
                               <h5>Steps</h5>
@@ -135,6 +137,7 @@
                               </div>
 
                             </div>
+
                             <div class="tab-pane fade" id="list-deletejob" role="tabpanel" aria-labelledby="list-deletejob-list">
                               <h4>Actor: Human Resources</h4>
                               <h5>Steps</h5>
@@ -172,7 +175,7 @@
                               </div>
                             </div>
 
-                            <div class="tab-pane fade" id="list-findminmax" role="tabpanel" aria-labelledby="list-findminmax-list">
+                            <div class="tab-pane fade" id="list-aggregatejob" role="tabpanel" aria-labelledby="list-aggregatejob-list">
                               <h4>Actor: Job seeker</h4>
                               <h5>Steps</h5>
                               <div>
@@ -189,8 +192,26 @@
                                 <a href="sql.html#job-aggregate" target="_blank">Aggregate SQL Statement</a>
                               </div>
                             </div>
-                            <div class="tab-pane fade" id="list-findminmax" role="tabpanel" aria-labelledby="list-findminmax-list">...</div>
+                            
+                            <div class="tab-pane fade" id="list-joinjob" role="tabpanel" aria-labelledby="list-joinjob-list">
+                              <h4>Actor: Human Resources</h4>
+                              <h5>Steps</h5>
+                              <div>
+                                <ol>
+                                  <li>User accesses database to display jobs.</li>
+                                  <li>User clicks on button to filter jobs.</li>
+                                  <li>
+                                    User checks filter for jobs that have been already applied to. User submits query.
+                                  </li>
+                                  <li>
+                                    Jobs that have been applied to with a resume are displayed.
+                                  </li>
+                                </ol>
+                                <a href="sql.html#job-join" target="_blank">Join SQL Statement</a>
+                              </div>
+                            </div>
                           </div>
+
                         </div>
                       </div>
 
