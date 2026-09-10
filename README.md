@@ -14,6 +14,7 @@ npm run dev
 On Windows, use `npm.cmd` if PowerShell blocks npm's script shim.
 
 ```sh
+npm run lint
 npm run typecheck
 npm run build
 npm run check:export
@@ -21,6 +22,8 @@ npm start
 ```
 
 The static export is `dist/client`. GitHub Actions checks each change and deploys successful builds from `main`. GitHub Pages uses the Actions publishing source and the existing `harissiddiqui.me` custom domain with HTTPS.
+
+The repository also uses GitHub's default CodeQL setup to satisfy its required pull-request security scan.
 
 Pages use native links and static images, so the linter's Next.js router and image-service preferences are disabled. `scripts/prepare-pages.mjs` adds directory indexes after export to work around a trailing-slash prerender issue in Vinext beta.5.
 
