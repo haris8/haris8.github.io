@@ -133,7 +133,84 @@ export default function Home() {
           <div className="section-heading">
             <h2 id="experience-title">Work experience</h2>
           </div>
-          <p className="experience-pending">Résumé to follow.</p>
+          <div className="experience-list">
+            <article className="experience-row">
+              <p className="experience-date">
+                <time dateTime="2025-02">Feb 2025</time> – Present
+              </p>
+              <div className="experience-detail">
+                <h3>Data Engineer</h3>
+                <p className="experience-company">Shell plc</p>
+                <ul className="experience-highlights">
+                  <li>
+                    Built targeted recovery for a natural gas storage valuation
+                    report, cutting recovery time from 1–2 hours to under 15
+                    minutes.
+                  </li>
+                  <li>
+                    Mapped 50+ Excel-based processes and built scheduled Azure
+                    Data Factory pipelines to standardize data ingestion.
+                  </li>
+                  <li>
+                    Developed AI-assisted model documentation with GitHub
+                    Actions and Copilot, supported by business validation and
+                    human review.
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article className="experience-row">
+              <p className="experience-date">
+                <time dateTime="2023-05">May 2023</time> –{' '}
+                <time dateTime="2025-01">Jan 2025</time>
+              </p>
+              <div className="experience-detail">
+                <h3>Site Reliability Engineer</h3>
+                <p className="experience-company">Shell plc</p>
+                <ul className="experience-highlights">
+                  <li>
+                    Replaced legacy spreadsheet automations with Power Automate
+                    cloud workflows for gas operations, saving 469+ hours
+                    annually.
+                  </li>
+                  <li>
+                    Implemented Dynatrace monitoring and alerts for trading
+                    processes and exchange data feeds to identify failures
+                    sooner.
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article className="experience-row">
+              <p className="experience-date">
+                <time dateTime="2018-11">Nov 2018</time> –{' '}
+                <time dateTime="2023-04">Apr 2023</time>
+              </p>
+              <div className="experience-detail">
+                <h3>Engineering Support Analyst</h3>
+                <p className="experience-company">Park Place Technologies</p>
+                <ul className="experience-highlights">
+                  <li>
+                    Coordinated hardware support and case follow-up, reducing
+                    average ticket resolution from 11 days to three.
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div className="experience-skills">
+            <h3>Core skills</h3>
+            <ul className="skills-list" aria-label="Technical skills">
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Databricks</li>
+              <li>Azure Data Factory</li>
+              <li>Power Automate</li>
+              <li>Power Apps</li>
+              <li>Dynatrace</li>
+              <li>GitHub Actions</li>
+            </ul>
+          </div>
         </section>
         <section
           id="education"

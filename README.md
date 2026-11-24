@@ -29,13 +29,13 @@ Pages use native links and static images, so the linter's Next.js router and ima
 
 ## Editing
 
-- `app/page.tsx`: homepage, projects, experience placeholder, and education.
+- `app/page.tsx`: homepage, projects, selected work experience, core skills, and education.
 - `app/portfolio.tsx`: shared navigation, footer, and project graphics.
 - `app/projects/`: individual project pages.
 - `app/globals.css`: shared styling and responsive layouts.
 - `public/images/secret-weapon-*.svg`: generic desktop and mobile concepts. They contain fictional demo content and do not link to the private app.
 
-The name appears in the footer; the homepage hero retains the original moon photograph without a name, location, or tagline. Work experience awaits résumé content.
+The name appears in the footer; the homepage hero retains the original moon photograph without a name, location, or tagline. Work experience and core skills are condensed from the November 2026 CV, with selected achievements and the existing education section retained.
 
 ## Existing DataCity material
 

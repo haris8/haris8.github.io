@@ -458,10 +458,72 @@ p {
 .experience {
   padding-top: 105px;
 }
-.experience-pending {
-  color: #979f9c;
-  font-size: 14px;
+.experience .section-heading {
+  margin-bottom: 0;
+}
+.experience-row,
+.experience-skills {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(0, 3fr);
+  gap: 36px;
+  padding-block: 32px;
+  border-bottom: 1px solid var(--border);
+}
+.experience-date {
+  color: #a6abad;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  font-variant-numeric: tabular-nums;
+}
+.experience-detail h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+.experience-company {
+  margin-top: 4px;
+  color: #a6abad;
+  font-size: 1rem;
   line-height: 1.6;
+}
+.experience-highlights {
+  max-width: 68ch;
+  margin: 18px 0 0;
+  padding-left: 1.1rem;
+  list-style: disc;
+  color: #bfc3c4;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.experience-highlights li + li {
+  margin-top: 8px;
+}
+.experience-highlights li::marker {
+  color: #7f8984;
+  font-size: 0.75em;
+}
+.experience-skills {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.experience-skills h3 {
+  color: #a6abad;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  max-width: 68ch;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #bfc3c4;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 .education {
   padding-top: 105px;
@@ -1087,6 +1149,18 @@ figure {
   }
   .experience {
     padding-top: 64px;
+  }
+  .experience-row,
+  .experience-skills {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-top: 26px;
+  }
+  .experience-row {
+    padding-bottom: 26px;
+  }
+  .experience-highlights {
+    margin-top: 14px;
   }
   .education {
     padding-top: 64px;
