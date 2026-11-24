@@ -6,10 +6,12 @@ export const metadata: Metadata = {
     default: 'Haris Siddiqui | Projects & Explorations',
     template: '%s | Haris Siddiqui',
   },
-  description: 'Selected projects and education.',
+  description:
+    'Selected projects, data engineering experience, and education of Haris Siddiqui.',
   openGraph: {
     title: 'Haris Siddiqui',
-    description: 'Selected projects and education.',
+    description:
+      'Selected projects, data engineering experience, and education of Haris Siddiqui.',
     type: 'website',
     locale: 'en_US',
   },
